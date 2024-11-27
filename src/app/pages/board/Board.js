@@ -4,6 +4,8 @@ import KanbanColumn from "./KanbanColumn";
 import { useParams } from "react-router-dom";
 import api from "../../api/api";
 
+const backgroundImage = "/bg-2.jpg";
+
 function Board() {
   const [columns, setColumns] = useState([]);
   const [board, setBoard] = useState({});
@@ -83,8 +85,12 @@ function Board() {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          backgroundColor: "lightgray",
-          height: 50,
+          backgroundColor: "white",
+            backgroundImage: `url(${backgroundImage})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center center",
+            backgroundAttachment: "fixed",
+          height: 70,
           paddingLeft: 16,
           paddingRight: 160,
           position: "fixed",
@@ -98,8 +104,9 @@ function Board() {
         <Header style={{ marginTop: 2 }} as="h2">
           {board?.title}
         </Header>
-        <Button color="instagram" onClick={handleAddColumn}>
-          Add another list
+        <Button style={{
+            background: "linear-gradient(90deg, #e66465, #9198e5)",}}  onClick={handleAddColumn}>
+          ADD ANOTHER LIST
         </Button>
       </div>
       <div
@@ -107,6 +114,10 @@ function Board() {
           overflow: "auto",
           position: "fixed",
           bottom: 0,
+            backgroundImage: `url(${backgroundImage})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center center",
+            backgroundAttachment: "fixed",
           top: 130,
           left: 150,
           right: 0,
@@ -141,7 +152,8 @@ function Board() {
           onOpen={() => setOpen(true)}
           size="small"
         >
-          <Modal.Header>Add another list</Modal.Header>
+          <Modal.Header style={{
+              background: "linear-gradient(90deg, #e66465, #9198e5)",}}>ADD ANOTHER LIST</Modal.Header>
           <Modal.Content>
             <Input
               fluid

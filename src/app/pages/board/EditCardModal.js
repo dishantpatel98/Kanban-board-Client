@@ -98,7 +98,8 @@ function EditCardModal({
       }}
       size="tiny"
     >
-      <Modal.Header>Edit Card</Modal.Header>
+      <Modal.Header style={{
+        background: "linear-gradient(90deg, #e66465, #9198e5)",}}>Edit Card</Modal.Header>
       <Modal.Content>
         <Form error={!!error} success={!!successMessage}>
           <Message error content={error} />

@@ -295,7 +295,8 @@ function KanbanColumn({
               />
             ))}
           <div style={{ marginTop: 16 }}>
-            <Button color="instagram" fluid onClick={openAddCardModal}>
+            <Button style={{
+              background: "linear-gradient(90deg, #e66465, #9198e5)",}} fluid onClick={openAddCardModal}>
               <i className="plus icon" /> Add a card
             </Button>
           </div>

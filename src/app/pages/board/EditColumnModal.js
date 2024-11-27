@@ -13,12 +13,13 @@ function EditColumnModal({ open, onClose, column, onUpdate, onDelete }) {
   };
 
   return (
-    <Modal open={open} onClose={onClose} size="tiny">
-      <Modal.Header>Edit Column</Modal.Header>
+    <Modal open={open} onClose={onClose} size="tiny" >
+      <Modal.Header style={{
+        background: "linear-gradient(90deg, #e66465, #9198e5)",}}>Edit Column</Modal.Header>
       <Modal.Content>
         <Form>
           <Form.Field>
-            <label>Column Title</label>
+            <label >Column Title</label>
             <Input
               placeholder="Edit column name"
               value={editedColumn.name}

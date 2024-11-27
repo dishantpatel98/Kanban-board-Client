@@ -149,7 +149,7 @@ const Boards = () => {
           zIndex: 2, // Ensure it stays above the background
         }}>
           <div style={{marginBottom: 24}}>
-            <Button primary onClick={() => setOpenModal(true)} style={{fontSize: "1.2rem"}}>
+            <Button primary onClick={() => setOpenModal(true)} style={{fontSize: "1.2rem", background: "linear-gradient(90deg, #e66465, #9198e5)"}}>
               Create New Board
             </Button>
           </div>

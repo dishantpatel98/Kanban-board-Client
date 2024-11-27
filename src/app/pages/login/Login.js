@@ -121,7 +121,7 @@ const Login = () => {
             <Button type="submit"
                     style={{
                     color: "white",
-                    backgroundColor: "#004d4d",
+                    backgroundColor: "#cc96e3",
                     textAlign: "center",
                     marginBottom: "0.5rem",
                     borderRadius: "4px",

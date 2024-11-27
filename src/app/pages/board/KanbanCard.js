@@ -34,7 +34,7 @@ function KanbanCard({
         onClick={handleEditClick}
       >
         <Card.Content>
-          <Card.Header style={{ color: "black", fontSize: "14px" }}>
+          <Card.Header style={{ color: "black", fontSize: "14px",  }}>
             {card.title}
           </Card.Header>
           <Card.Description style={{
