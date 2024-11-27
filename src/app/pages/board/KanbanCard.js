@@ -37,7 +37,12 @@ function KanbanCard({
           <Card.Header style={{ color: "black", fontSize: "14px" }}>
             {card.title}
           </Card.Header>
-          <Card.Description >{card.description}</Card.Description>
+          <Card.Description style={{
+            wordWrap: "break-word",
+            overflowWrap: "break-word",
+            whiteSpace: "normal",
+          }}
+          >{card.description}</Card.Description>
         </Card.Content>
       </Card>
     </>
