@@ -10,7 +10,7 @@ const Header = () => {
     <Segment inverted secondary
              style={{
                  background: "linear-gradient(90deg, #004d4d, #007a7a)",
-                 borderBottom: "0px solid #004040",
+                 borderBottom: "5px solid #004040",
                  boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
              }}
     >
